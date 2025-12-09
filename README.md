@@ -50,3 +50,17 @@ You can then extract it and either open term_data.txt and analyse it on your own
 ### Non-PTY Sessions
 If the encrypted file has a valid non-PTY session capture, then the output ZIP will contain 2 files:
 `data_from_client.txt` and `data_from_server.txt`. These contain upstream and downstream traffic, respectively.
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
+
+# Download and install Node.js:
+nvm install 24
+
+# Verify the Node.js version:
+node -v # Should print "v24.11.1".
+
+# Verify npm version:
+npm -v # Should print "11.6.2".
